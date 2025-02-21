@@ -10,7 +10,7 @@ public class Periode {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
 
     @Column(name="date_debut")
     private String dateDebut;
