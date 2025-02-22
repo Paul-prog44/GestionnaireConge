@@ -27,14 +27,13 @@ public class DemandeCongeController {
     }
 
     @DeleteMapping("/demandeConges/{id}")
-    public ResponseEntity<DemandeConge> deleteDemandeConge(Long id) {
+    public ResponseEntity deleteDemandeConge(@PathVariable("id") Long id) {
         demandeCongeService.deleteDemandeConge(id);
         return ResponseEntity.noContent().build();
     }
 
     @PostMapping("/demandeConges")
     public ResponseEntity<DemandeConge> createDemandeConge(@RequestBody DemandeCongeRequest demandeCongeRequest ) {
-        System.out.println(demandeCongeRequest);
         Long employeeId = demandeCongeRequest.getEmployeeId();
         Long periodeId = demandeCongeRequest.getPeriodeId();
 

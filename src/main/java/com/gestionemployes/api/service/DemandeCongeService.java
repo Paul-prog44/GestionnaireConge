@@ -51,7 +51,6 @@ public class DemandeCongeService {
          demandeConge.setEmploye(employe);
          demandeConge.setPeriode(periode);
          demandeConge.setDateDemande(LocalDateTime.now());
-         System.out.print(demandeConge);
 
          return demandeCongeRepository.save(demandeConge);
      }
