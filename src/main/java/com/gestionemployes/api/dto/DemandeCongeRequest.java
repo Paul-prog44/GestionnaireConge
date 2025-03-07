@@ -6,6 +6,4 @@ import lombok.Data;
 public class DemandeCongeRequest {
     private Long employeeId;
     private Long periodeId;
-
-
 }
